@@ -125,3 +125,10 @@ input {
   height: "70px";
   margin: "50px";
 }
+
+.react-datepicker-wrapper {
+  margin-top: 5px !important;
+  margin-left: 90px !important;
+  font-size: smaller !important;
+  font-weight: 500 !important;
+}

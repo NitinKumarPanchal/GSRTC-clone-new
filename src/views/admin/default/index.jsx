@@ -21,17 +21,18 @@ import bg9 from "assets/img/bg/bg9.jpg";
 import bg10 from "assets/img/bg/bg10.jpg";
 import SeaterView from "components/Seats/Seater/SeaterView";
 import Confirm from "components/Confirm-layout/Confirm";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 const Dashboard = () => {
   const [bookingDetails, setBookingDetails] = useState([]);
   const [boardingPoint, setBoardingPoint] = useState("Thara");
   const [dropingPoint, setDropingPoint] = useState("Ahmedabad");
-  const [bookingDate, setbookingDate] = useState("");
+  const [bookingDate, setbookingDate] = useState(new Date());
   const [showMessage, setShowMessage] = useState(false);
   const [busDetails, setBusDetails] = useState([]);
   const [showSeats, setShowSeats] = useState(false);
   const [showResults, setShowResults] = useState([]);
-
 
   const getTripCode = (e) => {
     const tripCode = e.serviceNumber.split("-");
@@ -84,10 +85,7 @@ const Dashboard = () => {
             </div>
             <div className=" searchbusradius h-[40px] items-center bg-lightPrimary text-navy-700 dark:bg-navy-900 dark:text-white ">
               <div className="bookingDate">
-                <Input
-                  type="date"
-                  onChange={(e) => setbookingDate(e.target.value)}
-                ></Input>
+                <DatePicker selected={bookingDate} onChange={(e) => setbookingDate(e.target.value)} />
               </div>
             </div>
           </div>
