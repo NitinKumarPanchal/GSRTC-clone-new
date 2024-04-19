@@ -28,7 +28,7 @@ const Navbar = (props) => {
         </p>
       </div>
       <span
-        className="ml-[150px] flex cursor-pointer text-xl text-gray-600 dark:text-white xl:hidden"
+        className="ml-[90px] flex cursor-pointer text-xl text-gray-600 dark:text-white xl:hidden"
         onClick={onOpenSidenav}
       >
         <FiAlignJustify className="h-5 w-5" />
