@@ -1,0 +1,127 @@
+.searchbar {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.searchbtn {
+  background-color: rgb(51, 122, 183);
+  border-radius: 11px;
+  height: 40px;
+  padding: 8px;
+  padding-top: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  color: white;
+}
+.searchCard {
+  border-radius: 10px;
+  width: 920px;
+}
+
+.css-qbdosj-Input {
+  width: 160px;
+}
+.css-13cymwt-control {
+  border-width: 0px !important;
+  background-color: transparent !important;
+  font-size: smaller !important;
+  font-weight: 500 !important;
+}
+
+input {
+  background-color: transparent !important;
+}
+
+.hours {
+  color: red;
+  margin-left: 300px;
+}
+
+.boardingWebFonts {
+  font-size: smaller;
+  font-family: "Poppins";
+}
+
+.bookbtn {
+  background-color: green;
+  border-radius: 11px;
+  padding-right: 8px;
+  padding-left: 8px;
+  color: white;
+  font-size: small;
+}
+
+.css-1fdsijx-ValueContainer {
+  width: 270px;
+}
+
+.searchbusradius {
+  border-radius: 7px;
+}
+.bookingDate {
+  text-align: center;
+  padding: 7px;
+}
+.mobCard {
+  border-radius: 10px;
+}
+.busLists {
+  overflow-y: scroll;
+  height: 661px;
+}
+.mostly-customized-scrollbar::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background-color: #aaa; /* or add it to the track */
+}
+
+/* Add a thumb */
+.mostly-customized-scrollbar::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+.buslistheader {
+  padding-left: 30px;
+  color: white;
+  padding-right: 30px;
+  background-color: rgb(51 122 183);
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.containerx {
+  position: relative;
+  text-align: center;
+}
+.confirmp {
+  width: 300px;
+}
+
+.congr {
+  font-size: xx-large;
+  font-weight: 600;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+}
+.navItem {
+  margin-top: 10px;
+  color: #ffffffa3;
+  margin-right: 30px;
+  font-weight: 500;
+}
+
+.signIn {
+  margin-top: 150px;
+}
+
+.gslg {
+  width: "350px";
+  height: "70px";
+  margin: "50px";
+}
