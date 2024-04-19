@@ -28,11 +28,11 @@ const Dashboard = () => {
   const [bookingDetails, setBookingDetails] = useState([]);
   const [boardingPoint, setBoardingPoint] = useState("Thara");
   const [dropingPoint, setDropingPoint] = useState("Ahmedabad");
-  const [bookingDate, setbookingDate] = useState(new Date());
   const [showMessage, setShowMessage] = useState(false);
   const [busDetails, setBusDetails] = useState([]);
   const [showSeats, setShowSeats] = useState(false);
   const [showResults, setShowResults] = useState([]);
+  const [date, setDate] = useState(new Date());
 
   const getTripCode = (e) => {
     const tripCode = e.serviceNumber.split("-");
@@ -45,7 +45,8 @@ const Dashboard = () => {
   };
 
   const searchBus = () => {
-    if (bookingDate === "") {
+    console.log(date);
+    if (date === "") {
       alert("*please select booking date");
     } else {
       let busService = busData.filter((item) => {
@@ -64,6 +65,11 @@ const Dashboard = () => {
       }
     }
   };
+
+  const getBookingDate = () => {
+    let date1 = date.toLocaleDateString()
+    return date1
+  }
   return (
     <>  {bookingDetails[0]?.confirmation ? <Confirm data={bookingDetails} /> : <>
       {isMobile ? (
@@ -85,7 +91,7 @@ const Dashboard = () => {
             </div>
             <div className=" searchbusradius h-[40px] items-center bg-lightPrimary text-navy-700 dark:bg-navy-900 dark:text-white ">
               <div className="bookingDate">
-                <DatePicker  selected={bookingDate} onChange={(e) => setbookingDate(e.target.value)} />
+                <DatePicker selected={date} onChange={(date) => setDate(date)} />
               </div>
             </div>
           </div>
@@ -115,7 +121,7 @@ const Dashboard = () => {
                     />
                   </p>
                   <p style={{ fontSize: "x-small", marginLeft: "30px" }}>
-                    {bookingDate}
+                    {getBookingDate()}
                   </p>
                 </div>
                 <div className="text-lg font-bold">
@@ -262,7 +268,7 @@ const Dashboard = () => {
                   <p className="pl-3 pr-2 text-xl">
                     <FiSearch className="h-4 w-4 text-gray-400 dark:text-white" />
                   </p>
-                  <DatePicker selected={bookingDate} onChange={(e) => setbookingDate(e.target.value)} />
+                  <DatePicker selected={date} onChange={(date) => setDate(date)} />
                 </div>
                 <button className="searchbtn" onClick={() => searchBus()}>
                   Search
