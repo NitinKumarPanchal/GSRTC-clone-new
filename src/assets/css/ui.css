@@ -17,7 +17,7 @@
 }
 .searchCard {
   border-radius: 10px;
-  width: 920px;
+  width: 1000px;
 }
 
 .css-qbdosj-Input {
@@ -128,7 +128,7 @@ input {
 
 .react-datepicker-wrapper {
   margin-top: 5px !important;
-  margin-left: 90px !important;
+  margin-left: 70px !important;
   font-size: smaller !important;
   font-weight: 500 !important;
 }

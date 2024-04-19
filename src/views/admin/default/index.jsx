@@ -85,7 +85,7 @@ const Dashboard = () => {
             </div>
             <div className=" searchbusradius h-[40px] items-center bg-lightPrimary text-navy-700 dark:bg-navy-900 dark:text-white ">
               <div className="bookingDate">
-                <DatePicker selected={bookingDate} onChange={(e) => setbookingDate(e.target.value)} />
+                <DatePicker  selected={bookingDate} onChange={(e) => setbookingDate(e.target.value)} />
               </div>
             </div>
           </div>
@@ -262,10 +262,7 @@ const Dashboard = () => {
                   <p className="pl-3 pr-2 text-xl">
                     <FiSearch className="h-4 w-4 text-gray-400 dark:text-white" />
                   </p>
-                  <Input
-                    type="date"
-                    onChange={(e) => setbookingDate(e.target.value)}
-                  ></Input>
+                  <DatePicker selected={bookingDate} onChange={(e) => setbookingDate(e.target.value)} />
                 </div>
                 <button className="searchbtn" onClick={() => searchBus()}>
                   Search
