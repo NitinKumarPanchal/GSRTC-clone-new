@@ -40,12 +40,12 @@ const Dashboard = () => {
   };
 
   const selectSeat = (data) => {
+    data.journeyDate = getBookingDate()
     setShowResults(data)
     setShowSeats(true);
   };
 
   const searchBus = () => {
-    console.log(date);
     if (date === "") {
       alert("*please select booking date");
     } else {
@@ -67,9 +67,20 @@ const Dashboard = () => {
   };
 
   const getBookingDate = () => {
-    let date1 = date.toLocaleDateString()
-    return date1
+    let curDate = date.toLocaleDateString()
+    return curDate
   }
+
+  const getSeatAvailability = (item) => {
+    let reservedSeat = item.reservedSeat
+    let data = [];
+    reservedSeat.map((item, i) => {
+      const empty = item.seats.filter((i) => i.status === "empty");
+      data.push(empty);
+    });
+    return (Object.values(data).flat().length + ' Seats')
+  };
+
   return (
     <>  {bookingDetails[0]?.confirmation ? <Confirm data={bookingDetails} /> : <>
       {isMobile ? (
@@ -355,7 +366,7 @@ const Dashboard = () => {
                                   className="bookbtn"
                                   onClick={() => selectSeat(data, index)}
                                 >
-                                  10 seats
+                                  {getSeatAvailability(data)}
                                 </button>
                               </span>
                             </div>

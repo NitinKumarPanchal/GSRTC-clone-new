@@ -69,7 +69,7 @@ input {
 }
 .busLists {
   overflow-y: scroll;
-  height: 661px;
+  max-height: 661px;
 }
 .mostly-customized-scrollbar::-webkit-scrollbar {
   width: 0px;

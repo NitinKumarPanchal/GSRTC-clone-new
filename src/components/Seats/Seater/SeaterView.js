@@ -12,13 +12,12 @@ import {
   Row,
   Col,
   CardTitle,
-  CardBody, 
-  CardSubtitle, 
+  CardBody,
+  CardSubtitle,
 } from "reactstrap";
 
 
 const SeaterView = (props) => {
-  console.log(props);
   let SeaterDb = [];
   const [data] = useState([props.busRow]);
   const [showSeatName, setshowSeatName] = useState("");
@@ -31,9 +30,9 @@ const SeaterView = (props) => {
   const [email, setEmail] = useState("");
   const [gender, setGender] = useState("");
   const [baseFare, setBaseFare] = useState(0);
-  const [selectedValue, setSelectedValue] = useState("male"); 
+  const [selectedValue, setSelectedValue] = useState("male");
 
-  let bookedSeatsNo = [];  
+  let bookedSeatsNo = [];
   let reservationDetails = {
     name: name,
     email: email,
@@ -60,7 +59,6 @@ const SeaterView = (props) => {
   };
 
   const bookTicket = (ele) => {
-    console.log("hi");
     reservationDetails.seats = showSeatName;
     const tripCode = ele.serviceNumber.split("-");
     const PNR =
@@ -274,7 +272,7 @@ const SeaterView = (props) => {
     }
   };
 
-  
+
   return (
     <div className="mt-7 mb-7 grid h-full grid-cols-1 gap-5 xl:ml-[240px] xl:mr-[240px] xl:grid-cols-2 ">
       <div className="col-span-1 h-fit w-full xl:col-span-1 2xl:col-span-2">
@@ -336,8 +334,7 @@ const SeaterView = (props) => {
                 <CardTitle tag="h5">{data[0].serviceName} </CardTitle>
                 <CardSubtitle className="hr-line"> </CardSubtitle>
                 <CardSubtitle
-                  className="text-muted text-capitalize fw-bolder mb-2"
-                  tag="h6"
+                  className="boldText"
                 >
                   Boarding Info :
                 </CardSubtitle>
@@ -347,9 +344,9 @@ const SeaterView = (props) => {
                 >
                   Place :
                   <span>
-                   
-                      {data[0].boardingInfoList[0].placeName}
-                   
+
+                    {data[0].boardingInfoList[0].placeName}
+
                   </span>
                 </CardSubtitle>
                 <CardSubtitle
@@ -358,9 +355,9 @@ const SeaterView = (props) => {
                 >
                   Time :
                   <span>
-                  
-                      {data[0].boardingInfoList[0].placeTime}
-                  
+
+                    {data[0].boardingInfoList[0].placeTime}
+
                   </span>
                 </CardSubtitle>
                 <CardSubtitle
@@ -369,15 +366,14 @@ const SeaterView = (props) => {
                 >
                   Date :
                   <span>
-                  
-                      {data[0].boardingInfoList[0].dt}
-                   
+
+                    {data[0].journeyDate}
+
                   </span>
                 </CardSubtitle>
                 <CardSubtitle className="hr-line"> </CardSubtitle>
                 <CardSubtitle
-                  className="text-muted text-capitalize fw-bolder mb-2"
-                  tag="h6"
+                  className="boldText"
                 >
                   Dropping Info :
                 </CardSubtitle>
@@ -387,9 +383,9 @@ const SeaterView = (props) => {
                 >
                   Place :
                   <span>
-                  
-                      {data[0].droppingInfoList[0].placeName}
-                 
+
+                    {data[0].droppingInfoList[0].placeName}
+
                   </span>
                 </CardSubtitle>
                 <CardSubtitle
@@ -398,9 +394,9 @@ const SeaterView = (props) => {
                 >
                   Time :
                   <span>
-                  
-                      {data[0].droppingInfoList[0].placeTime}
-                  
+
+                    {data[0].droppingInfoList[0].placeTime}
+
                   </span>
                 </CardSubtitle>
                 <CardSubtitle
@@ -409,22 +405,20 @@ const SeaterView = (props) => {
                 >
                   Date :
                   <span>
-                 
-                      {data[0].droppingInfoList[0].dt}
-                  
+
+                    {data[0].journeyDate}
+
                   </span>
                 </CardSubtitle>
                 <CardSubtitle className="hr-line"> </CardSubtitle>
                 <CardSubtitle
-                  className="text-muted text-capitalize fw-bolder mb-2"
-                  tag="h6"
+                  className="boldText"
                 >
-                  Fare : {"₹" + baseFare}
+                  Fare : <span className="fareInfo"> {"₹" + baseFare}</span>
                 </CardSubtitle>
                 <CardSubtitle className="hr-line"> </CardSubtitle>
                 <CardSubtitle
-                  className="text-muted text-capitalize fw-bolder mb-2"
-                  tag="h6"
+                  className="boldText"
                 >
                   Selected seats :{" "}
                   <span className={showSeatName.length ? "showSeatname" : ""}>
@@ -518,7 +512,7 @@ const SeaterView = (props) => {
                     onClick={() => bookTicket(data[0])}
                   >
                     {" "}
-                    Pay{"₹ " + baseFare}
+                    Pay{" ₹" + baseFare}
                   </button>
                 </div>
               </CardBody>

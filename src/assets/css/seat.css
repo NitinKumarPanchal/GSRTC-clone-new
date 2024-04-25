@@ -203,3 +203,10 @@ td:hover .tooltiptext {
   margin-left: 6px;
   margin-right: 15px;
 }
+.boldText{
+  font-weight: 600;
+}
+.fareInfo{
+  font-weight: 600;
+  color: green;
+}

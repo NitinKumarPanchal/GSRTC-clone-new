@@ -534,10 +534,10 @@
           {
             "seats": [
               { "seatNo": "01", "status": "empty" },
-              { "seatNo": "02", "status": "empty" },
+              { "seatNo": "02", "status": "booked" },
               { "seatNo": "", "status": "" },
               { "seatNo": "03", "status": "empty" },
-              { "seatNo": "04", "status": "empty" },
+              { "seatNo": "04", "status": "booked" },
               { "seatNo": "05", "status": "booked" }
             ]
           },
@@ -557,7 +557,7 @@
               { "seatNo": "12", "status": "empty" },
               { "seatNo": "", "status": "" },
               { "seatNo": "13", "status": "empty" },
-              { "seatNo": "14", "status": "empty" },
+              { "seatNo": "14", "status": "booked" },
               { "seatNo": "15", "status": "empty" }
             ]
           },
@@ -5171,6 +5171,118 @@
           ],
           "isPartialCancellable": "NO"
         },
+        "reservedSeat": [
+          {
+            "seats": [
+              { "seatNo": "01", "status": "empty" },
+              { "seatNo": "02", "status": "booked" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "03", "status": "empty" },
+              { "seatNo": "04", "status": "booked" },
+              { "seatNo": "05", "status": "booked" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "10", "status": "empty" },
+              { "seatNo": "09 ", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "08 ", "status": "empty" },
+              { "seatNo": "07 ", "status": "empty" },
+              { "seatNo": "06 ", "status": "booked" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "11", "status": "empty" },
+              { "seatNo": "12", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "13", "status": "empty" },
+              { "seatNo": "14", "status": "booked" },
+              { "seatNo": "15", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "20", "status": "empty" },
+              { "seatNo": "19", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "18", "status": "empty" },
+              { "seatNo": "17", "status": "empty" },
+              { "seatNo": "16", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "21", "status": "empty" },
+              { "seatNo": "22", "status": "empty" },
+              { "seatNo": "23", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "", "status": "booked" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "26", "status": "empty" },
+              { "seatNo": "25", "status": "empty" },
+              { "seatNo": "24", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "27", "status": "empty" },
+              { "seatNo": "28", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "29", "status": "empty" },
+              { "seatNo": "30", "status": "empty" },
+              { "seatNo": "31", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "36", "status": "empty" },
+              { "seatNo": "35", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "34", "status": "empty" },
+              { "seatNo": "33", "status": "empty" },
+              { "seatNo": "32", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "37", "status": "empty" },
+              { "seatNo": "38", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "39", "status": "empty" },
+              { "seatNo": "40", "status": "empty" },
+              { "seatNo": "41", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "46", "status": "empty" },
+              { "seatNo": "45", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "44", "status": "empty" },
+              { "seatNo": "43", "status": "empty" },
+              { "seatNo": "42", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "47", "status": "empty" },
+              { "seatNo": "48", "status": "empty" },
+              { "seatNo": "49", "status": "empty" },
+              { "seatNo": "50", "status": "empty" },
+              { "seatNo": "51", "status": "empty" },
+              { "seatNo": "52", "status": "empty" }
+            ]
+          }
+        ],
         "insuranceAmount": 10,
         "is_deal_avail": 0,
         "is_track_avail": 0,
@@ -5265,6 +5377,118 @@
             "latlong": null,
             "mapID": 0,
             "dt": "2024-04-11 11:00"
+          }
+        ],
+        "reservedSeat": [
+          {
+            "seats": [
+              { "seatNo": "01", "status": "empty" },
+              { "seatNo": "02", "status": "booked" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "03", "status": "empty" },
+              { "seatNo": "04", "status": "booked" },
+              { "seatNo": "05", "status": "booked" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "10", "status": "empty" },
+              { "seatNo": "09 ", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "08 ", "status": "empty" },
+              { "seatNo": "07 ", "status": "empty" },
+              { "seatNo": "06 ", "status": "booked" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "11", "status": "empty" },
+              { "seatNo": "12", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "13", "status": "empty" },
+              { "seatNo": "14", "status": "booked" },
+              { "seatNo": "15", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "20", "status": "empty" },
+              { "seatNo": "19", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "18", "status": "empty" },
+              { "seatNo": "17", "status": "empty" },
+              { "seatNo": "16", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "21", "status": "empty" },
+              { "seatNo": "22", "status": "empty" },
+              { "seatNo": "23", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "", "status": "booked" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "26", "status": "empty" },
+              { "seatNo": "25", "status": "empty" },
+              { "seatNo": "24", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "27", "status": "empty" },
+              { "seatNo": "28", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "29", "status": "empty" },
+              { "seatNo": "30", "status": "empty" },
+              { "seatNo": "31", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "36", "status": "empty" },
+              { "seatNo": "35", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "34", "status": "empty" },
+              { "seatNo": "33", "status": "empty" },
+              { "seatNo": "32", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "37", "status": "empty" },
+              { "seatNo": "38", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "39", "status": "empty" },
+              { "seatNo": "40", "status": "empty" },
+              { "seatNo": "41", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "46", "status": "empty" },
+              { "seatNo": "45", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "44", "status": "empty" },
+              { "seatNo": "43", "status": "empty" },
+              { "seatNo": "42", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "47", "status": "empty" },
+              { "seatNo": "48", "status": "empty" },
+              { "seatNo": "49", "status": "empty" },
+              { "seatNo": "50", "status": "empty" },
+              { "seatNo": "51", "status": "empty" },
+              { "seatNo": "52", "status": "empty" }
+            ]
           }
         ],
         "cancellationInfo": {
@@ -5404,6 +5628,118 @@
         "travelsGroup": "459~2",
         "busTypeMapID": "2,3",
         "travelerAgentNameMapID": 111313,
+        "reservedSeat": [
+          {
+            "seats": [
+              { "seatNo": "01", "status": "empty" },
+              { "seatNo": "02", "status": "booked" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "03", "status": "empty" },
+              { "seatNo": "04", "status": "booked" },
+              { "seatNo": "05", "status": "booked" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "10", "status": "empty" },
+              { "seatNo": "09 ", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "08 ", "status": "empty" },
+              { "seatNo": "07 ", "status": "empty" },
+              { "seatNo": "06 ", "status": "booked" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "11", "status": "empty" },
+              { "seatNo": "12", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "13", "status": "empty" },
+              { "seatNo": "14", "status": "booked" },
+              { "seatNo": "15", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "20", "status": "empty" },
+              { "seatNo": "19", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "18", "status": "empty" },
+              { "seatNo": "17", "status": "empty" },
+              { "seatNo": "16", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "21", "status": "empty" },
+              { "seatNo": "22", "status": "empty" },
+              { "seatNo": "23", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "", "status": "booked" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "26", "status": "empty" },
+              { "seatNo": "25", "status": "empty" },
+              { "seatNo": "24", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "27", "status": "empty" },
+              { "seatNo": "28", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "29", "status": "empty" },
+              { "seatNo": "30", "status": "empty" },
+              { "seatNo": "31", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "36", "status": "empty" },
+              { "seatNo": "35", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "34", "status": "empty" },
+              { "seatNo": "33", "status": "empty" },
+              { "seatNo": "32", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "37", "status": "empty" },
+              { "seatNo": "38", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "39", "status": "empty" },
+              { "seatNo": "40", "status": "empty" },
+              { "seatNo": "41", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "46", "status": "empty" },
+              { "seatNo": "45", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "44", "status": "empty" },
+              { "seatNo": "43", "status": "empty" },
+              { "seatNo": "42", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "47", "status": "empty" },
+              { "seatNo": "48", "status": "empty" },
+              { "seatNo": "49", "status": "empty" },
+              { "seatNo": "50", "status": "empty" },
+              { "seatNo": "51", "status": "empty" },
+              { "seatNo": "52", "status": "empty" }
+            ]
+          }
+        ],
         "boardingInfoList": [
           {
             "placeName": "GEETAMANDIR BUS PORT",
@@ -5564,6 +5900,118 @@
         "travelsGroup": "459~2",
         "busTypeMapID": "2,3",
         "travelerAgentNameMapID": 111313,
+        "reservedSeat": [
+          {
+            "seats": [
+              { "seatNo": "01", "status": "empty" },
+              { "seatNo": "02", "status": "booked" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "03", "status": "empty" },
+              { "seatNo": "04", "status": "booked" },
+              { "seatNo": "05", "status": "booked" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "10", "status": "empty" },
+              { "seatNo": "09 ", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "08 ", "status": "empty" },
+              { "seatNo": "07 ", "status": "empty" },
+              { "seatNo": "06 ", "status": "booked" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "11", "status": "empty" },
+              { "seatNo": "12", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "13", "status": "empty" },
+              { "seatNo": "14", "status": "booked" },
+              { "seatNo": "15", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "20", "status": "empty" },
+              { "seatNo": "19", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "18", "status": "empty" },
+              { "seatNo": "17", "status": "empty" },
+              { "seatNo": "16", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "21", "status": "empty" },
+              { "seatNo": "22", "status": "empty" },
+              { "seatNo": "23", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "", "status": "booked" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "26", "status": "empty" },
+              { "seatNo": "25", "status": "empty" },
+              { "seatNo": "24", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "27", "status": "empty" },
+              { "seatNo": "28", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "29", "status": "empty" },
+              { "seatNo": "30", "status": "empty" },
+              { "seatNo": "31", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "36", "status": "empty" },
+              { "seatNo": "35", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "34", "status": "empty" },
+              { "seatNo": "33", "status": "empty" },
+              { "seatNo": "32", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "37", "status": "empty" },
+              { "seatNo": "38", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "39", "status": "empty" },
+              { "seatNo": "40", "status": "empty" },
+              { "seatNo": "41", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "46", "status": "empty" },
+              { "seatNo": "45", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "44", "status": "empty" },
+              { "seatNo": "43", "status": "empty" },
+              { "seatNo": "42", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "47", "status": "empty" },
+              { "seatNo": "48", "status": "empty" },
+              { "seatNo": "49", "status": "empty" },
+              { "seatNo": "50", "status": "empty" },
+              { "seatNo": "51", "status": "empty" },
+              { "seatNo": "52", "status": "empty" }
+            ]
+          }
+        ],
         "boardingInfoList": [
           {
             "placeName": "GEETAMANDIR BUS PORT",
@@ -5724,6 +6172,118 @@
         "travelsGroup": "459~2",
         "busTypeMapID": "2,3",
         "travelerAgentNameMapID": 111313,
+        "reservedSeat": [
+          {
+            "seats": [
+              { "seatNo": "01", "status": "empty" },
+              { "seatNo": "02", "status": "booked" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "03", "status": "empty" },
+              { "seatNo": "04", "status": "booked" },
+              { "seatNo": "05", "status": "booked" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "10", "status": "empty" },
+              { "seatNo": "09 ", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "08 ", "status": "empty" },
+              { "seatNo": "07 ", "status": "empty" },
+              { "seatNo": "06 ", "status": "booked" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "11", "status": "empty" },
+              { "seatNo": "12", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "13", "status": "empty" },
+              { "seatNo": "14", "status": "booked" },
+              { "seatNo": "15", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "20", "status": "empty" },
+              { "seatNo": "19", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "18", "status": "empty" },
+              { "seatNo": "17", "status": "empty" },
+              { "seatNo": "16", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "21", "status": "empty" },
+              { "seatNo": "22", "status": "empty" },
+              { "seatNo": "23", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "", "status": "booked" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "26", "status": "empty" },
+              { "seatNo": "25", "status": "empty" },
+              { "seatNo": "24", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "27", "status": "empty" },
+              { "seatNo": "28", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "29", "status": "empty" },
+              { "seatNo": "30", "status": "empty" },
+              { "seatNo": "31", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "36", "status": "empty" },
+              { "seatNo": "35", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "34", "status": "empty" },
+              { "seatNo": "33", "status": "empty" },
+              { "seatNo": "32", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "37", "status": "empty" },
+              { "seatNo": "38", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "39", "status": "empty" },
+              { "seatNo": "40", "status": "empty" },
+              { "seatNo": "41", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "46", "status": "empty" },
+              { "seatNo": "45", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "44", "status": "empty" },
+              { "seatNo": "43", "status": "empty" },
+              { "seatNo": "42", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "47", "status": "empty" },
+              { "seatNo": "48", "status": "empty" },
+              { "seatNo": "49", "status": "empty" },
+              { "seatNo": "50", "status": "empty" },
+              { "seatNo": "51", "status": "empty" },
+              { "seatNo": "52", "status": "empty" }
+            ]
+          }
+        ],
         "boardingInfoList": [
           {
             "placeName": "GEETAMANDIR BUS PORT",
@@ -5884,6 +6444,118 @@
         "travelsGroup": "459~2",
         "busTypeMapID": "2,3",
         "travelerAgentNameMapID": 111313,
+        "reservedSeat": [
+          {
+            "seats": [
+              { "seatNo": "01", "status": "empty" },
+              { "seatNo": "02", "status": "booked" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "03", "status": "empty" },
+              { "seatNo": "04", "status": "booked" },
+              { "seatNo": "05", "status": "booked" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "10", "status": "empty" },
+              { "seatNo": "09 ", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "08 ", "status": "empty" },
+              { "seatNo": "07 ", "status": "empty" },
+              { "seatNo": "06 ", "status": "booked" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "11", "status": "empty" },
+              { "seatNo": "12", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "13", "status": "empty" },
+              { "seatNo": "14", "status": "booked" },
+              { "seatNo": "15", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "20", "status": "empty" },
+              { "seatNo": "19", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "18", "status": "empty" },
+              { "seatNo": "17", "status": "empty" },
+              { "seatNo": "16", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "21", "status": "empty" },
+              { "seatNo": "22", "status": "empty" },
+              { "seatNo": "23", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "", "status": "booked" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "26", "status": "empty" },
+              { "seatNo": "25", "status": "empty" },
+              { "seatNo": "24", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "27", "status": "empty" },
+              { "seatNo": "28", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "29", "status": "empty" },
+              { "seatNo": "30", "status": "empty" },
+              { "seatNo": "31", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "36", "status": "empty" },
+              { "seatNo": "35", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "34", "status": "empty" },
+              { "seatNo": "33", "status": "empty" },
+              { "seatNo": "32", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "37", "status": "empty" },
+              { "seatNo": "38", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "39", "status": "empty" },
+              { "seatNo": "40", "status": "empty" },
+              { "seatNo": "41", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "46", "status": "empty" },
+              { "seatNo": "45", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "44", "status": "empty" },
+              { "seatNo": "43", "status": "empty" },
+              { "seatNo": "42", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "47", "status": "empty" },
+              { "seatNo": "48", "status": "empty" },
+              { "seatNo": "49", "status": "empty" },
+              { "seatNo": "50", "status": "empty" },
+              { "seatNo": "51", "status": "empty" },
+              { "seatNo": "52", "status": "empty" }
+            ]
+          }
+        ],
         "boardingInfoList": [
           {
             "placeName": "AHMEDABAD CBS1",
@@ -6044,6 +6716,118 @@
         "travelsGroup": "459~2",
         "busTypeMapID": "2,3",
         "travelerAgentNameMapID": 111313,
+        "reservedSeat": [
+          {
+            "seats": [
+              { "seatNo": "01", "status": "empty" },
+              { "seatNo": "02", "status": "booked" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "03", "status": "empty" },
+              { "seatNo": "04", "status": "booked" },
+              { "seatNo": "05", "status": "booked" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "10", "status": "empty" },
+              { "seatNo": "09 ", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "08 ", "status": "empty" },
+              { "seatNo": "07 ", "status": "empty" },
+              { "seatNo": "06 ", "status": "booked" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "11", "status": "empty" },
+              { "seatNo": "12", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "13", "status": "empty" },
+              { "seatNo": "14", "status": "booked" },
+              { "seatNo": "15", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "20", "status": "empty" },
+              { "seatNo": "19", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "18", "status": "empty" },
+              { "seatNo": "17", "status": "empty" },
+              { "seatNo": "16", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "21", "status": "empty" },
+              { "seatNo": "22", "status": "empty" },
+              { "seatNo": "23", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "", "status": "booked" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "26", "status": "empty" },
+              { "seatNo": "25", "status": "empty" },
+              { "seatNo": "24", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "27", "status": "empty" },
+              { "seatNo": "28", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "29", "status": "empty" },
+              { "seatNo": "30", "status": "empty" },
+              { "seatNo": "31", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "36", "status": "empty" },
+              { "seatNo": "35", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "34", "status": "empty" },
+              { "seatNo": "33", "status": "empty" },
+              { "seatNo": "32", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "37", "status": "empty" },
+              { "seatNo": "38", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "39", "status": "empty" },
+              { "seatNo": "40", "status": "empty" },
+              { "seatNo": "41", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "46", "status": "empty" },
+              { "seatNo": "45", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "44", "status": "empty" },
+              { "seatNo": "43", "status": "empty" },
+              { "seatNo": "42", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "47", "status": "empty" },
+              { "seatNo": "48", "status": "empty" },
+              { "seatNo": "49", "status": "empty" },
+              { "seatNo": "50", "status": "empty" },
+              { "seatNo": "51", "status": "empty" },
+              { "seatNo": "52", "status": "empty" }
+            ]
+          }
+        ],
         "boardingInfoList": [
           {
             "placeName": "AHMEDABAD CBS1",
@@ -6204,6 +6988,118 @@
         "travelsGroup": "459~2",
         "busTypeMapID": "2,3",
         "travelerAgentNameMapID": 111313,
+        "reservedSeat": [
+          {
+            "seats": [
+              { "seatNo": "01", "status": "empty" },
+              { "seatNo": "02", "status": "booked" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "03", "status": "empty" },
+              { "seatNo": "04", "status": "booked" },
+              { "seatNo": "05", "status": "booked" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "10", "status": "empty" },
+              { "seatNo": "09 ", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "08 ", "status": "empty" },
+              { "seatNo": "07 ", "status": "empty" },
+              { "seatNo": "06 ", "status": "booked" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "11", "status": "empty" },
+              { "seatNo": "12", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "13", "status": "empty" },
+              { "seatNo": "14", "status": "booked" },
+              { "seatNo": "15", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "20", "status": "empty" },
+              { "seatNo": "19", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "18", "status": "empty" },
+              { "seatNo": "17", "status": "empty" },
+              { "seatNo": "16", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "21", "status": "empty" },
+              { "seatNo": "22", "status": "empty" },
+              { "seatNo": "23", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "", "status": "booked" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "26", "status": "empty" },
+              { "seatNo": "25", "status": "empty" },
+              { "seatNo": "24", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "27", "status": "empty" },
+              { "seatNo": "28", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "29", "status": "empty" },
+              { "seatNo": "30", "status": "empty" },
+              { "seatNo": "31", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "36", "status": "empty" },
+              { "seatNo": "35", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "34", "status": "empty" },
+              { "seatNo": "33", "status": "empty" },
+              { "seatNo": "32", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "37", "status": "empty" },
+              { "seatNo": "38", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "39", "status": "empty" },
+              { "seatNo": "40", "status": "empty" },
+              { "seatNo": "41", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "46", "status": "empty" },
+              { "seatNo": "45", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "44", "status": "empty" },
+              { "seatNo": "43", "status": "empty" },
+              { "seatNo": "42", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "47", "status": "empty" },
+              { "seatNo": "48", "status": "empty" },
+              { "seatNo": "49", "status": "empty" },
+              { "seatNo": "50", "status": "empty" },
+              { "seatNo": "51", "status": "empty" },
+              { "seatNo": "52", "status": "empty" }
+            ]
+          }
+        ],
         "boardingInfoList": [
           {
             "placeName": "GEETAMANDIR BUS PORT",
@@ -6364,6 +7260,118 @@
         "travelsGroup": "459~2",
         "busTypeMapID": "2,3",
         "travelerAgentNameMapID": 111313,
+        "reservedSeat": [
+          {
+            "seats": [
+              { "seatNo": "01", "status": "empty" },
+              { "seatNo": "02", "status": "booked" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "03", "status": "empty" },
+              { "seatNo": "04", "status": "booked" },
+              { "seatNo": "05", "status": "booked" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "10", "status": "empty" },
+              { "seatNo": "09 ", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "08 ", "status": "empty" },
+              { "seatNo": "07 ", "status": "empty" },
+              { "seatNo": "06 ", "status": "booked" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "11", "status": "empty" },
+              { "seatNo": "12", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "13", "status": "empty" },
+              { "seatNo": "14", "status": "booked" },
+              { "seatNo": "15", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "20", "status": "empty" },
+              { "seatNo": "19", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "18", "status": "empty" },
+              { "seatNo": "17", "status": "empty" },
+              { "seatNo": "16", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "21", "status": "empty" },
+              { "seatNo": "22", "status": "empty" },
+              { "seatNo": "23", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "", "status": "booked" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "26", "status": "empty" },
+              { "seatNo": "25", "status": "empty" },
+              { "seatNo": "24", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "27", "status": "empty" },
+              { "seatNo": "28", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "29", "status": "empty" },
+              { "seatNo": "30", "status": "empty" },
+              { "seatNo": "31", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "36", "status": "empty" },
+              { "seatNo": "35", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "34", "status": "empty" },
+              { "seatNo": "33", "status": "empty" },
+              { "seatNo": "32", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "37", "status": "empty" },
+              { "seatNo": "38", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "39", "status": "empty" },
+              { "seatNo": "40", "status": "empty" },
+              { "seatNo": "41", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "46", "status": "empty" },
+              { "seatNo": "45", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "44", "status": "empty" },
+              { "seatNo": "43", "status": "empty" },
+              { "seatNo": "42", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "47", "status": "empty" },
+              { "seatNo": "48", "status": "empty" },
+              { "seatNo": "49", "status": "empty" },
+              { "seatNo": "50", "status": "empty" },
+              { "seatNo": "51", "status": "empty" },
+              { "seatNo": "52", "status": "empty" }
+            ]
+          }
+        ],
         "boardingInfoList": [
           {
             "placeName": "GEETAMANDIR BUS PORT",
@@ -6524,6 +7532,118 @@
         "travelsGroup": "459~2",
         "busTypeMapID": "2,3",
         "travelerAgentNameMapID": 111313,
+        "reservedSeat": [
+          {
+            "seats": [
+              { "seatNo": "01", "status": "empty" },
+              { "seatNo": "02", "status": "booked" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "03", "status": "empty" },
+              { "seatNo": "04", "status": "booked" },
+              { "seatNo": "05", "status": "booked" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "10", "status": "empty" },
+              { "seatNo": "09 ", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "08 ", "status": "empty" },
+              { "seatNo": "07 ", "status": "empty" },
+              { "seatNo": "06 ", "status": "booked" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "11", "status": "empty" },
+              { "seatNo": "12", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "13", "status": "empty" },
+              { "seatNo": "14", "status": "booked" },
+              { "seatNo": "15", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "20", "status": "empty" },
+              { "seatNo": "19", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "18", "status": "empty" },
+              { "seatNo": "17", "status": "empty" },
+              { "seatNo": "16", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "21", "status": "empty" },
+              { "seatNo": "22", "status": "empty" },
+              { "seatNo": "23", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "", "status": "booked" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "26", "status": "empty" },
+              { "seatNo": "25", "status": "empty" },
+              { "seatNo": "24", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "27", "status": "empty" },
+              { "seatNo": "28", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "29", "status": "empty" },
+              { "seatNo": "30", "status": "empty" },
+              { "seatNo": "31", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "36", "status": "empty" },
+              { "seatNo": "35", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "34", "status": "empty" },
+              { "seatNo": "33", "status": "empty" },
+              { "seatNo": "32", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "37", "status": "empty" },
+              { "seatNo": "38", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "39", "status": "empty" },
+              { "seatNo": "40", "status": "empty" },
+              { "seatNo": "41", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "46", "status": "empty" },
+              { "seatNo": "45", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "44", "status": "empty" },
+              { "seatNo": "43", "status": "empty" },
+              { "seatNo": "42", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "47", "status": "empty" },
+              { "seatNo": "48", "status": "empty" },
+              { "seatNo": "49", "status": "empty" },
+              { "seatNo": "50", "status": "empty" },
+              { "seatNo": "51", "status": "empty" },
+              { "seatNo": "52", "status": "empty" }
+            ]
+          }
+        ],
         "boardingInfoList": [
           {
             "placeName": "GEETAMANDIR BUS PORT",
@@ -6684,6 +7804,118 @@
         "travelsGroup": "459~2",
         "busTypeMapID": "2,4",
         "travelerAgentNameMapID": 111313,
+        "reservedSeat": [
+          {
+            "seats": [
+              { "seatNo": "01", "status": "empty" },
+              { "seatNo": "02", "status": "booked" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "03", "status": "empty" },
+              { "seatNo": "04", "status": "booked" },
+              { "seatNo": "05", "status": "booked" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "10", "status": "empty" },
+              { "seatNo": "09 ", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "08 ", "status": "empty" },
+              { "seatNo": "07 ", "status": "empty" },
+              { "seatNo": "06 ", "status": "booked" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "11", "status": "empty" },
+              { "seatNo": "12", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "13", "status": "empty" },
+              { "seatNo": "14", "status": "booked" },
+              { "seatNo": "15", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "20", "status": "empty" },
+              { "seatNo": "19", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "18", "status": "empty" },
+              { "seatNo": "17", "status": "empty" },
+              { "seatNo": "16", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "21", "status": "empty" },
+              { "seatNo": "22", "status": "empty" },
+              { "seatNo": "23", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "", "status": "booked" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "26", "status": "empty" },
+              { "seatNo": "25", "status": "empty" },
+              { "seatNo": "24", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "27", "status": "empty" },
+              { "seatNo": "28", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "29", "status": "empty" },
+              { "seatNo": "30", "status": "empty" },
+              { "seatNo": "31", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "36", "status": "empty" },
+              { "seatNo": "35", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "34", "status": "empty" },
+              { "seatNo": "33", "status": "empty" },
+              { "seatNo": "32", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "37", "status": "empty" },
+              { "seatNo": "38", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "39", "status": "empty" },
+              { "seatNo": "40", "status": "empty" },
+              { "seatNo": "41", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "46", "status": "empty" },
+              { "seatNo": "45", "status": "empty" },
+              { "seatNo": "", "status": "" },
+              { "seatNo": "44", "status": "empty" },
+              { "seatNo": "43", "status": "empty" },
+              { "seatNo": "42", "status": "empty" }
+            ]
+          },
+          {
+            "seats": [
+              { "seatNo": "47", "status": "empty" },
+              { "seatNo": "48", "status": "empty" },
+              { "seatNo": "49", "status": "empty" },
+              { "seatNo": "50", "status": "empty" },
+              { "seatNo": "51", "status": "empty" },
+              { "seatNo": "52", "status": "empty" }
+            ]
+          }
+        ],
         "boardingInfoList": [
           {
             "placeName": "GEETAMANDIR BUS PORT",
