@@ -203,10 +203,21 @@ td:hover .tooltiptext {
   margin-left: 6px;
   margin-right: 15px;
 }
-.boldText{
+.boldText {
+  padding: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  background: #b3b3b330;
+  border-radius: 15px;
   font-weight: 600;
+  color: #337ab7;
 }
-.fareInfo{
+.fareInfo {
   font-weight: 600;
   color: green;
+}
+.card-title {
+  font-weight: 600;
+  color: #337ab7;
+  line-break: anywhere;
 }

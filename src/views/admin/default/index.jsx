@@ -1,5 +1,5 @@
 import Select from "react-select";
-import { CardSubtitle, Input } from "reactstrap";
+import { CardSubtitle} from "reactstrap";
 import "../../../assets/css/ui.css";
 import { FiSearch } from "react-icons/fi";
 import { useState } from "react";
@@ -55,6 +55,10 @@ const Dashboard = () => {
         );
       });
       const data = busService[0]?.serviceDetailsList;
+      // eslint-disable-next-line array-callback-return
+      data.map((item,i)=>{
+         item.startTime.split(':')
+      })
       setBusDetails(data);
       if (data?.length) {
 
@@ -74,6 +78,7 @@ const Dashboard = () => {
   const getSeatAvailability = (item) => {
     let reservedSeat = item.reservedSeat
     let data = [];
+    // eslint-disable-next-line array-callback-return
     reservedSeat.map((item, i) => {
       const empty = item.seats.filter((i) => i.status === "empty");
       data.push(empty);

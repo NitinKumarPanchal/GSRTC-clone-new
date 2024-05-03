@@ -22,13 +22,12 @@ const SeaterView = (props) => {
   const [data] = useState([props.busRow]);
   const [showSeatName, setshowSeatName] = useState("");
   const [availableSeats, setAvailableSeats] = useState(10);
-  const [queue, setQueue] = useState(true);
-  const [contiuneBtn, setContiuneBtn] = useState(false);
+  const [queue, setQueue] = useState(false);
   const [confirmBtn, setConfirmBtn] = useState(false);
   const [name, setName] = useState("");
   const [mobile, setMobile] = useState("");
   const [email, setEmail] = useState("");
-  const [gender, setGender] = useState("");
+  const [gender] = useState("");
   const [baseFare, setBaseFare] = useState(0);
   const [selectedValue, setSelectedValue] = useState("male");
 
@@ -45,17 +44,18 @@ const SeaterView = (props) => {
     setSelectedValue(value);
   };
 
-  const checkConfirmation = () => {
-    if (name !== "" && email !== "" && mobile !== "") {
-      setConfirmBtn(true);
-    } else if (name === "" || email === "" || mobile === "") {
+  const checkConfirmation = (flag) => {
+    if (flag) {
+      if (name !== "" && email !== "" && mobile !== "") {
+        setConfirmBtn(true);
+      } else if (name === "" || email === "" || mobile === "") {
+        setConfirmBtn(false);
+      }
+    }
+    else {
       setConfirmBtn(false);
     }
-  };
 
-  const createTicket = () => {
-    setContiuneBtn(false);
-    setQueue(false);
   };
 
   const bookTicket = (ele) => {
@@ -233,18 +233,29 @@ const SeaterView = (props) => {
   };
 
   const selectRow = (item, i, j) => {
+    var result = [];
     if (item.status !== "booked") {
       bookedSeatsNo.push(item.seatNo);
     }
-    var result = [];
+
     bookedSeatsNo.forEach(function (item) {
       if (result.indexOf(item) < 0) {
         result.push(item);
       }
     });
     bookedSeatsNo = result;
+    // eslint-disable-next-line array-callback-return
+    bookedSeatsNo.map((e, i) => {
+      if (e === item.seatNo && item.status === "selected") {
+        bookedSeatsNo.splice(i, 1);
+        setName('');
+        setEmail('');
+        setMobile('');
+      }
+    });
     setshowSeatName(bookedSeatsNo.toString());
-    setContiuneBtn(bookedSeatsNo.length);
+    setQueue(bookedSeatsNo.length);
+    checkConfirmation(bookedSeatsNo.length);
     getBaseFare();
     let status =
       item.status === "empty"
@@ -252,7 +263,7 @@ const SeaterView = (props) => {
         : item.status === "booked"
           ? BookedSeats
           : item.status === "selected"
-            ? SelectedSeats
+            ? AvailableSeats
             : null;
     updateSeatStatus(item, i, j);
     return status;
@@ -270,13 +281,14 @@ const SeaterView = (props) => {
     if (status === "selected") {
       SeaterDb[i].seats[j].status = "empty";
     }
+    getSeatAvailability();
   };
 
 
   return (
-    <div className="mt-7 mb-7 grid h-full grid-cols-1 gap-5 xl:ml-[240px] xl:mr-[240px] xl:grid-cols-2 ">
+    <div className="mt-7 mb-7 grid h-full grid-cols-1 gap-5 xl:ml-[430px] xl:mr-[430px] xl:grid-cols-2 ">
       <div className="col-span-1 h-fit w-full xl:col-span-1 2xl:col-span-2">
-        <div className="z-20 grid grid-cols-1 gap-5 md:grid-cols-3">
+        <div className="z-20 grid grid-cols-1 gap-5 md:grid-cols-2">
           <Card extra={"mt- !z-5 overflow-hidden"}>
             <div className=" dashCard h-full w-full items-start justify-between bg-white px-3 py-[20px] hover:shadow-2xl dark:!bg-navy-800 dark:shadow-none dark:hover:!bg-navy-700">
               <div className=" items-center gap-3">
@@ -329,14 +341,14 @@ const SeaterView = (props) => {
             </div>
           </Card>
           <Card extra={"mt-3 !z-5 overflow-hidden"}>
-            <div className=" dashCard h-full w-full items-start justify-between bg-white px-3 py-[20px] hover:shadow-2xl dark:!bg-navy-800 dark:shadow-none dark:hover:!bg-navy-700">
+            <div className=" dashCard h-full w-half items-start justify-between bg-white px-3 py-[20px] hover:shadow-2xl dark:!bg-navy-800 dark:shadow-none dark:hover:!bg-navy-700">
               <CardBody>
                 <CardTitle tag="h5">{data[0].serviceName} </CardTitle>
                 <CardSubtitle className="hr-line"> </CardSubtitle>
                 <CardSubtitle
                   className="boldText"
                 >
-                  Boarding Info :
+                  Boarding Info
                 </CardSubtitle>
                 <CardSubtitle
                   className="text-muted text-capitalize mb-2"
@@ -375,7 +387,7 @@ const SeaterView = (props) => {
                 <CardSubtitle
                   className="boldText"
                 >
-                  Dropping Info :
+                  Dropping Info
                 </CardSubtitle>
                 <CardSubtitle
                   className="text-muted text-capitalize mb-2"
@@ -426,58 +438,48 @@ const SeaterView = (props) => {
                   </span>
                 </CardSubtitle>
                 <CardSubtitle className="hr-line"> </CardSubtitle>
-                <div className="mt-7 text-center">
-                  <button
-                    disabled={!contiuneBtn}
-                    className={contiuneBtn ? "searchbtn" : "searchbtn disbtn"}
-                    onClick={() => createTicket(data[0])}
-                  >
-                    {" "}
-                    Contiune{" "}
-                  </button>
-                </div>
               </CardBody>
-            </div>
-          </Card>
-          <Card extra={"mt-3 !z-5 overflow-hidden"}>
-            <div className=" dashCard h-full w-full items-start justify-between bg-white px-3 py-[20px] hover:shadow-2xl dark:!bg-navy-800 dark:shadow-none dark:hover:!bg-navy-700">
               <CardBody>
-                <CardTitle tag="h5">{"Enter your details"}</CardTitle>
+                <CardTitle tag="h5" className="mt-5">{"Enter your details"}</CardTitle>
                 <hr />
                 <Row>
                   <Col>
                     <Card>
                       <CardBody>
                         <input
-                          disabled={queue}
+                          disabled={!queue}
                           onChange={(e) => {
                             setName(e.target.value);
-                            checkConfirmation();
+                            checkConfirmation(1);
                           }}
+                          value={name}
                           placeholder={"Enter your name"}
                           className={`mt-2 flex h-12 w-full items-center justify-center rounded-xl border bg-white/0 p-3 text-sm outline-none`}
                         />
                         <input
                           onChange={(e) => {
                             setEmail(e.target.value);
-                            checkConfirmation();
+                            checkConfirmation(1);
                           }}
-                          disabled={queue}
+                          id="emailVal"
+                          value={email}
+                          disabled={!queue}
                           placeholder={"Enter your email"}
                           className={`mt-2 flex h-12 w-full items-center justify-center rounded-xl border bg-white/0 p-3 text-sm outline-none`}
                         />
                         <input
                           onChange={(e) => {
                             setMobile(e.target.value);
-                            checkConfirmation();
+                            checkConfirmation(1);
                           }}
-                          disabled={queue}
+                          disabled={!queue}
+                          value={mobile}
                           placeholder={"Enter your mobile"}
                           className={`mt-2 flex h-12 w-full items-center justify-center rounded-xl border bg-white/0 p-3 text-sm outline-none`}
                         />
                         <div className="mt-5 ml-3">
                           <input
-                            disabled={queue}
+                            disabled={!queue}
                             type="radio"
                             id="male"
                             value="male"
@@ -489,7 +491,7 @@ const SeaterView = (props) => {
                           </label>
 
                           <input
-                            disabled={queue}
+                            disabled={!queue}
                             type="radio"
                             id="female"
                             value="female"
@@ -517,7 +519,9 @@ const SeaterView = (props) => {
                 </div>
               </CardBody>
             </div>
+
           </Card>
+
         </div>
       </div>
     </div>
