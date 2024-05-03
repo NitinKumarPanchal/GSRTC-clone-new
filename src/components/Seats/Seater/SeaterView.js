@@ -298,7 +298,7 @@ const SeaterView = (props) => {
                   </CardTitle>
                   <CardSubtitle className="text-muted">
                     <div className="card-subtitle">
-                      <div> Click twice on seat to booked, </div>
+                      <div> Click on seat to select/deselect </div>
                     </div>
                   </CardSubtitle>
                   <CardSubtitle className="hr-line"></CardSubtitle>
