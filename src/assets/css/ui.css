@@ -28,6 +28,8 @@
   background-color: transparent !important;
   font-size: smaller !important;
   font-weight: 500 !important;
+  width: 260px !important;
+
 }
 
 input {
