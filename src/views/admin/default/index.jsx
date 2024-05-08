@@ -284,7 +284,7 @@ const Dashboard = () => {
                   <p className="pl-3 pr-2 text-xl">
                     <FiSearch className="h-4 w-4 text-gray-400 dark:text-white" />
                   </p>
-                  <DatePicker selected={date} onChange={(date) => setDate(date)} />
+                  <DatePicker minDate={date} selected={date} onChange={(date) => setDate(date)} />
                 </div>
                 <button className="searchbtn" onClick={() => searchBus()}>
                   Search
