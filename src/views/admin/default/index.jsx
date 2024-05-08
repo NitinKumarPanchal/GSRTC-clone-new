@@ -1,5 +1,5 @@
 import Select from "react-select";
-import { CardSubtitle} from "reactstrap";
+import { CardSubtitle } from "reactstrap";
 import "../../../assets/css/ui.css";
 import { FiSearch } from "react-icons/fi";
 import { useState } from "react";
@@ -33,6 +33,7 @@ const Dashboard = () => {
   const [showSeats, setShowSeats] = useState(false);
   const [showResults, setShowResults] = useState([]);
   const [date, setDate] = useState(new Date());
+  const [maxDate, setmaxDate] = useState('');
 
   const getTripCode = (e) => {
     const tripCode = e.serviceNumber.split("-");
@@ -56,8 +57,8 @@ const Dashboard = () => {
       });
       const data = busService[0]?.serviceDetailsList;
       // eslint-disable-next-line array-callback-return
-      data.map((item,i)=>{
-         item.startTime.split(':')
+      data.map((item, i) => {
+        item.startTime.split(':')
       })
       setBusDetails(data);
       if (data?.length) {
@@ -86,6 +87,13 @@ const Dashboard = () => {
     return (Object.values(data).flat().length + ' Seats')
   };
 
+  const getmaxDate = () => {
+    let day = date.getUTCDate();
+    let month = date.getUTCMonth() + 1;
+    let year = date.getUTCFullYear();
+    return `${month}/${day + 15}/${year}`
+  }
+
   return (
     <>  {bookingDetails[0]?.confirmation ? <Confirm data={bookingDetails} /> : <>
       {isMobile ? (
@@ -107,7 +115,7 @@ const Dashboard = () => {
             </div>
             <div className=" searchbusradius h-[40px] items-center bg-lightPrimary text-navy-700 dark:bg-navy-900 dark:text-white ">
               <div className="bookingDate">
-                <DatePicker selected={date} onChange={(date) => setDate(date)} />
+                <DatePicker selected={date} minDate={date} onChange={(date) => setDate(date)} />
               </div>
             </div>
           </div>
@@ -284,7 +292,7 @@ const Dashboard = () => {
                   <p className="pl-3 pr-2 text-xl">
                     <FiSearch className="h-4 w-4 text-gray-400 dark:text-white" />
                   </p>
-                  <DatePicker minDate={date} selected={date} onChange={(date) => setDate(date)} />
+                  <DatePicker minDate={date} maxDate={getmaxDate()} selected={date} onChange={(date) => setDate(date)} />
                 </div>
                 <button className="searchbtn" onClick={() => searchBus()}>
                   Search
